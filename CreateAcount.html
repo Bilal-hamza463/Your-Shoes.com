@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="Description" content=" Page D'Inscription Crow.com .">
+        <title>  Your Shoes | sign up </title>
+        <link rel="stylesheet" href="Css/CreateAcount.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script  src="Link/Javascript.js"></script>
+    </head>
+    <body>
+        <header >
+                <h1 class="h1"> 
+                    Your Shoes 
+                </h1>
+                <p class="pInscr"> Create an account </p>
+        </header>
+        <article>
+            <p>
+                <h1>Create an acount</h1>
+                If you have an acount ? <a href="Sign Up.html" target="_blank" class="SpanText">Sign up</a>
+            </p>
+            <form>
+                <div class="P2Cntact">
+                    Login with Social Media <br>
+                    <a href="https://mail.bilalhamza463@gmail.com/" target="_blank" class="fa fa-google"></a>
+                    <a href="https://www.facebook.com/hamza.smk.50/" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/hamzasmk/" target="_blank" class="fa fa-instagram"></a> 
+                </div>
+                <p>Or</p>
+                <form>
+                    <p id="ErrorMsg" style="color: red;font-size: 15px;">
+
+                    </p>
+                    <input type="text" placeholder="First Name" id="FirstName" required>
+                    <input type="text" placeholder="Last Name" id="LastName" required>
+                    <br>
+                    <input type="date" id="Date" required> 
+                    <br>
+                    <input type="email" placeholder="Email" id="Email" required>
+                    <br>
+                    <input type="password" placeholder="Password" id="Password" required>
+                    <br>
+                    <input type="password" placeholder="Confirm Password" id="ConfirmPassword" required>
+                    <br>
+                    <label>
+                        Remenber Me 
+                        <input type="checkbox" checked>
+                    </label>
+                </form>
+                <p class="ParagrapheText">
+                    By Creating an account, you agree to our <span class="SpanText"> User Agreement </span> and <br>
+                    acknoweledge reading our <span class="SpanText"> User Privacy Notice </span> .
+                </p>
+                <button onclick="CreateAccount()"> Create account </button>
+                <p class="ParagrapheText">
+                    If you need anything Contact us.
+                </p>
+            </form>
+            <div class="AlertMsg" id="AlertMsg">
+                <span class="h3"> Save password ?</span>
+                <span class="h3Right" onclick="CloseAlert()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg> 
+                </span> <br>
+                <hr>
+                <img src="img/gallery-Slideshow//icons8-save.gif" alt="animation" class="Animation-Saved"> <br>
+                <p>
+                    UserName <br>
+                    <span class="UserNameCop" id="UserNameCop"></span> <br>
+                    Password <br>
+                    <span class="PasswordCop" id="PasswordCop"></span>
+                </p>
+                <p class="Btn-AlertMsg">
+                    <button class="Save" onclick="CloseAlert()"> Save </button>
+                    <button class="Never" onclick="CloseAlert()"> Never </button>
+                </p>
+            </div>
+        </article>
+    </body>
+</html>

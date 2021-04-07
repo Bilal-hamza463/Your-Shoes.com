@@ -1,0 +1,189 @@
+body
+{
+    margin: 0%;
+    background-color: #d9d9d9;
+}
+* 
+{
+    box-sizing: border-box;
+}
+header
+{
+    padding: 40px;
+    text-align: center;
+    background-color: #6b8bc7;
+    color: white;
+    border-bottom: 3px solid #333;
+}
+header h1
+{
+    font-size: 40px;
+    width: auto;
+}
+.title
+{
+    font-size: 20px;
+}
+.Result
+{
+    width: 35%;
+    height: auto;
+    background-color: #fff;
+    position: fixed;
+    left: 32%;
+    bottom: 410px;
+    border-radius: 5px;
+    border: 0.5px solid #d9d9d9;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+    display: none;
+}
+.Result .Title
+{
+    font-size: 25px;
+    color: #6b8bc7;
+    float: left;
+}
+.Trait
+{
+    border: 0.5px solid #000;
+    width: 100%;
+}
+.Change-color
+{
+    color: #6b8bc7;
+}
+h3
+{
+    font-size: 20px;
+    color: #333;
+}
+.inputType
+{
+    position: relative;
+    left: 25%;
+    width: 50%;
+    height: 30px;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-align: center;
+}
+.ButtonSaved
+{
+    width: 40%;
+    height: 30px;
+    font-size: 15px;
+    padding: 0%;
+    background-color: #6b8bc7;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.ButtonSaved:hover
+{
+    background-color: #6b8bc7;
+    opacity: 1;
+}
+.Close
+{
+    font-size: 30px;
+    float: right;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    color: #6b8bc7;
+    font-weight: 100;
+}
+.Close:hover
+{
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+.ImgSaved
+{
+    font-size: 18px;
+    color: #333;
+}
+article
+{
+    width: 30%;
+    height: auto;
+    background-color: #fff;
+    position: relative;
+    left: 35%;
+    top: 90px;
+    text-align: center;
+    padding: 10px;
+    line-height: 45px;
+    animation: BorderStyle 4s infinite;
+    border-radius: 5px;
+}
+.SignUp
+{
+    width: 40%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #6b8bc7;
+    color: #fff;
+    border: 1px solid #6b8bc7;
+}
+.ErrorMsg
+{
+    color: red;
+    font-size: 15px;
+}
+.SignUp:hover
+{
+    background-color: #fff;
+    color: #6b8bc7;
+    animation: none;
+    border: 1px solid #fff;
+}
+h2
+{
+    color: #6b8bc7;
+}
+input[type=email],input[type=password]
+{
+    width: 80%;
+    height: 40px;
+    animation: BorderStyle 4s infinite;
+    border-radius: 5px;
+    text-align: center;
+}
+.LinkToanotherPage
+{
+    color: #6b8bc7;
+    font-size: 15px;
+}
+.Link
+{
+    line-height: 21px;
+}
+@keyframes BorderStyle
+{
+    0%{border: 1px solid #edf1f8;}
+    25%{border: 2px solid #b6c6e2;}
+    50%{border: 2px solid #7f9ccc;}
+    75%{border: 3px solid #4973b6;}
+    100%{border: 3px solid #34517f;}
+}
+@media screen and (max-width: 650px) 
+{
+    .col 
+    {
+        width: 100%;
+        margin-top: 0;
+    }
+    .vl 
+    {
+        display: none;
+    }
+    .hide-md-lg 
+    {
+        display: block;
+        text-align: center;
+    }
+}
